@@ -48,3 +48,11 @@ h3 {
     background-color: #f0f0f0;
     font: bold smaller sans-serif;
 }
+#content {
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    margin-left: 21%;
+    position: relative;
+    height: 80%;
+    margin-bottom: 0;
+}
