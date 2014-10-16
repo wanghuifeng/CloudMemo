@@ -1,9 +1,14 @@
 <p>
-  <strong>Commenter:</strong>
+  <strong>评论者:</strong>
   <%= comment.commenter %>
 </p>
  
 <p>
-  <strong>Comment:</strong>
+  <strong>评论内容:</strong>
   <%= comment.body %>
+</p>
+<p>
+  <%= link_to '删除评论', [comment.article, comment],
+               method: :delete,
+               data: { confirm: '你确认要删除评论吗?' } %>
 </p>

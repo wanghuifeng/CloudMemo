@@ -14,7 +14,7 @@
 html {height: 100%;}
 body {
     color: #484848;
-    font-family: Verdana,sans-serif;
+	font-family: Verdana,"Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     margin: 0;
     min-width: 800px;
@@ -55,4 +55,10 @@ h3 {
     position: relative;
     height: 80%;
     margin-bottom: 0;
+}
+textarea,input {
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }

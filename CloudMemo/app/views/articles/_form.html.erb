@@ -11,14 +11,13 @@
   </div>
   <% end %>
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </p>
- 
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
+  <label for="article_title">标题:</label> 
+  <input id="article_title" name="article[title]" type="text" value="<%= @article.title%>" />
+  </p> 
+  <p> 
+  <label for="article_text">内容:</label> 
+  <textarea cols="50" rows="6" id="article_text" name="article[text]"><%= @article.text%></textarea>
+  </p> 
  
   <p>
     <input name="commit" type="submit" class="btn btn-primary" value="创建文章" />
