@@ -12,7 +12,7 @@
   <% end %>
   <p>
   <label for="article_title">标题:</label> 
-  <input id="article_title" name="article[title]" type="text" value="<%= @article.title%>" />
+  <input id="article_title" name="article[title]" type="text" size="40" value="<%= @article.title%>" />
   </p> 
   <p> 
   <label for="article_text">内容:</label> 
@@ -20,6 +20,6 @@
   </p> 
  
   <p>
-    <input name="commit" type="submit" class="btn btn-primary" value="创建文章" />
+    <input name="commit" type="submit" class="btn btn-primary" value="提交日记" />
   </p>
 <% end %>
