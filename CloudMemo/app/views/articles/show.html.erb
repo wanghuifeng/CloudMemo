@@ -1,16 +1,15 @@
-<p>
-  <strong>标题:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>内容:</strong>
-  <%= @article.text %>
-  </p>
+<dl>
+  <dt>标题</dt>
+  <dd><%= @article.title %></dd>
+  <dt>内容</dt>
+  <dd><%= @article.text %></dd>
+</dl>
+
  <h2>评论列表</h2>
  <%= render @article.comments %> 
 
 <h2>添加一个评论:</h2>
  <% render 'comments/form' %>
-<%= link_to '回到主页', articles_path %>
-| <%= link_to '编辑', edit_article_path(@article) %>
+ <p><a class="btn btn-primary" role="button" href=<%= articles_path %>>回到主页</a>
+ <a class="btn btn-primary" role="button" href=<%= edit_article_path(@article) %> >编辑</a>
+ </p>

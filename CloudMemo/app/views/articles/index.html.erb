@@ -1,20 +1,18 @@
 <h1>日记一览表</h1>
- 
-<table>
+<div>
+<table class="table table-bordered table-hover table-condensed">
   <tr>
-    <th>Title</th>
-    <th>Text</th>
+    <th>标题</th>
+    <th>操作</th>
   </tr>
  
   <% @articles.each do |article| %>
     <tr>
       <td><%= article.title %></td>
-      <td><%= article.text %></td>
-	  <td><%= link_to '察看', article_path(article) %></td>
-      <td><%= link_to '编辑', edit_article_path(article) %></td>
-	  <td><%= link_to '删除', article_path(article),
+	  <td><%= link_to '察看', article_path(article) %> <%= link_to '编辑', edit_article_path(article) %> <%= link_to '删除', article_path(article),
                     method: :delete, data: { confirm: '你确定删除吗?' } %></td>
     </tr>
   <% end %>
 </table>
-<%= link_to '新建日记', new_article_path %>
+</div>
+<p><a class="btn btn-primary" role="button" href=<%= new_article_path %>>新建日记</a></p>
